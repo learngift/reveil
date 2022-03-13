@@ -11,8 +11,8 @@ html, body {
     --backgroundDark: #222222;
     --grey: #444444;
     --paleturquoise: #afeeee;
-    --debugBorder: 1px solid red;
-    /* --debugBorder: 0px solid red;*/
+    /* --debugBorder: 1px solid red; */
+    --debugBorder: 0px solid red;
     width: 100%;
     height: 100%;
     background: black; /* vrai noir pour économiser l'énergie */
@@ -44,7 +44,6 @@ html, body {
 }
 #ajuster {
     background-color: transparent;
-    /* background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBmaWxsPSJ3aGl0ZSI+CiAgICA8IS0tIDxwYXRoIGQ9Ik0wIDBoNDh2NDhoLTQ4eiIgZmlsbD0ibm9uZSIvPiAtLT4KICAgIDxwYXRoIGQ9Ik0zOC44NiAyNS45NWMuMDgtLjY0LjE0LTEuMjkuMTQtMS45NXMtLjA2LTEuMzEtLjE0LTEuOTVsNC4yMy0zLjMxYy4zOC0uMy40OS0uODQuMjQtMS4yOGwtNC02LjkzYy0uMjUtLjQzLS43Ny0uNjEtMS4yMi0uNDNsLTQuOTggMi4wMWMtMS4wMy0uNzktMi4xNi0xLjQ2LTMuMzgtMS45N2wtLjc1LTUuM2MtLjA5LS40Ny0uNS0uODQtMS0uODRoLThjLS41IDAtLjkxLjM3LS45OS44NGwtLjc1IDUuM2MtMS4yMi41MS0yLjM1IDEuMTctMy4zOCAxLjk3bC00Ljk4LTIuMDFjLS40NS0uMTctLjk3IDAtMS4yMi40M2wtNCA2LjkzYy0uMjUuNDMtLjE0Ljk3LjI0IDEuMjhsNC4yMiAzLjMxYy0uMDguNjQtLjE0IDEuMjktLjE0IDEuOTVzLjA2IDEuMzEuMTQgMS45NWwtNC4yMiAzLjMxYy0uMzguMy0uNDkuODQtLjI0IDEuMjhsNCA2LjkzYy4yNS40My43Ny42MSAxLjIyLjQzbDQuOTgtMi4wMWMxLjAzLjc5IDIuMTYgMS40NiAzLjM4IDEuOTdsLjc1IDUuM2MuMDguNDcuNDkuODQuOTkuODRoOGMuNSAwIC45MS0uMzcuOTktLjg0bC43NS01LjNjMS4yMi0uNTEgMi4zNS0xLjE3IDMuMzgtMS45N2w0Ljk4IDIuMDFjLjQ1LjE3Ljk3IDAgMS4yMi0uNDNsNC02LjkzYy4yNS0uNDMuMTQtLjk3LS4yNC0xLjI4bC00LjIyLTMuMzF6bS0xNC44NiA1LjA1Yy0zLjg3IDAtNy0zLjEzLTctN3MzLjEzLTcgNy03IDcgMy4xMyA3IDctMy4xMyA3LTcgN3oiIC8+Cjwvc3ZnPgo=); */
     border: none;
     outline: none;
     border: 0px;
@@ -53,8 +52,7 @@ html, body {
     position: absolute;
     right: 0;
     top: 0;
-}
-
-svg {
+    font-size: 2.5em;
     color: var(--paleturquoise);
 }
+
