@@ -1,0 +1,11 @@
+{
+  "name": "reveil",
+  "version": "1.0.0",
+  "description": "reveil matin",
+  "scripts": {
+    "start": "cd public && python -m SimpleHTTPServer 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pulpficti@gmail.com",
+  "license": "ISC"
+}
