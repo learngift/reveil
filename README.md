@@ -1,19 +1,10 @@
 # Réveil matin
 Bonjour, le but de ce projet est de détailler toutes les étapes de développement pour réaliser un réveil-matin en html/css/javascript.
 
-Init:
-création du répertoire /home/jef/Documents/Jef/github/OR/reveil
+Pour la V2, l'ambition est de faire une popup pour configurer l'heure de réveil.
 
-    npm init
-    git init .
-    mkdir public
-    code .
-    cd public ; python -m SimpleHTTPServer 8000
+Je récupère le fichier svg pour configurer : https://commons.wikimedia.org/wiki/File:Ic_settings_48px.svg
 
-Pour la première version, on ne fait qu'afficher l'heure. Le boilerplate html est expliqué par https://www.freecodecamp.org/news/basic-html5-template-boilerplate-code-example/.
+Pour mettre une image dans le fichier css, je convertis en ligne le svg en base64 (https://codebeautify.org/svg-to-base64-converter)
 
-Pour faire un rectangle arrondi : https://www.w3schools.com/css/css3_borders.asp
-
-Pour les couleurs (et la police), j'ai plagié https://codepen.io/cameron-townsend/pen/wWyrXP
-
-Défauts: la police étant proportionnelle, il y a de petits sauts.
+Je positionne le bouton en utilisant https://developer.mozilla.org/fr/docs/Web/CSS/position
