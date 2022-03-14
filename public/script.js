@@ -2,8 +2,9 @@ let currHeure = "unknown";
 let currDate  = "unknown";
 let heureTag  = document.getElementById("heure")
 let dateTag   = document.getElementById("date")
+let fenetreAjustement = document.getElementById("fenetreAjuster");
 
-setInterval(updateTime, 100) // l'heure est mise à jour avec une précision d'1/10 de seconde
+setInterval(updateTime, 100)
 
 function updateTime() {
     const maintenant = new Date()
@@ -21,3 +22,9 @@ function updateTime() {
         }
     }
 }
+
+document.getElementById("ajuster").addEventListener('click',
+    () => fenetreAjustement.classList.add('is--visible'));
+
+document.getElementsByClassName("fermeFenetreAjuster")[0].addEventListener('click',
+    () => fenetreAjustement.classList.remove('is--visible'));
