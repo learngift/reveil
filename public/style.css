@@ -7,12 +7,16 @@
   
 
 html, body {
+    /* margin et padding doivent être mis à 0 si ont veut utiliser 100% de la largeur et hauteur
+    sinon, il y a des scrollbar qui apparaissent. */
+    margin: 0;
+    padding: 0;
     --glow: 0px 2px 25px rgba(144, 244, 253, .6);
     --backgroundDark: #222222;
-    --grey: #444444;
+    --grey: #222222;
     --paleturquoise: #afeeee;
-    /* --debugBorder: 1px solid red; */
-    --debugBorder: 0px solid red;
+    --debugBorder: 1px solid red;
+    /* --debugBorder: 0px solid red; */
     width: 100%;
     height: 100%;
     background: black; /* vrai noir pour économiser l'énergie */
@@ -20,19 +24,22 @@ html, body {
 }
 
 .box {
-    aspect-ratio: 2;
-    width: 60vmin;
+    /* aspect-ratio: 2; */
+    /* avec le modèle border-box, la bordure est inclue dans les 100% */
+    box-sizing: border-box;
+    width:100%;
+    height:100%;
     border: 15px solid var(--grey);
     border-radius: 35px;
-    font-weight: 700;
+    font-size: 4vw;
     color: var(--paleturquoise);
     position: relative;
   }
 #heure {
     border: var(--debugBorder);
-    font-size: 2.5em;
+    font-size: 2.75em;
     text-shadow: var(--glow);
-    text-align: center;
+    margin: 1px 0 0.5em 0;
 }
 #date {
     border: var(--debugBorder);
@@ -42,43 +49,41 @@ html, body {
     border: var(--debugBorder);
     text-align: center;
 }
-#ajuster {
+.boutons_du_haut {
+    display: flex;
+    justify-content: space-between;
+    border: var(--debugBorder);
+}
+#ajuster, #volume {
     background-color: transparent;
     border: none;
     outline: none;
-    border: 0px;
-    width: 48px;
-    height: 48px;
-    position: absolute;
-    right: 0;
-    top: 0;
+    padding: 0;
     font-size: 2.5em;
     color: var(--paleturquoise);
-}
 
+}
+.fermeFenetreAjuster {
+    cursor: pointer;
+ }
 .popup-modal {
-    height: 365px;
-    width: 650px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding: 45px;
+    box-sizing: border-box;
+    width:100%;
+    height: 100%;
+    border: 15px solid var(--grey);
+    border-radius: 35px;
+    font-size: 4vw;
+    color: var(--paleturquoise);
+    position: fixed;
+    top: 0;
+    left: 0;
     opacity: 0;
     pointer-events: none;
-    color: var(--paleturquoise);
-    background-color: var(--backgroundDark);
+    background-color: black;
     transition: all 300ms ease-in-out;
-    z-index: 1011;
+    z-index: 1;
 }  
 .popup-modal.is--visible {
     opacity: 1;
     pointer-events: auto;
-  }
-.fermeFenetreAjuster {
-    position: absolute;
-    font-size: 2.5rem;
-    right: 0px;
-    top: 0px;
-    cursor: pointer;
   }

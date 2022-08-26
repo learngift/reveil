@@ -10,21 +10,25 @@
   </head>
   <body>
     <div class="box">
-        <button id="ajuster" class="bi-gear-fill bi-2x">
-        </button>
-        <p id="heure">13:37</p>
+      <div class="boutons_du_haut">
+        <button id="volume" class="bi-volume-up-fill bi-2x""></button>
+        <button id="ajuster" class="bi-gear-fill bi-2x"></button>
+      </div>
+      <p id="heure">13:37</p>
         <p id="date">un jour sur terre</p>
-        <p id="alarme"><i class="bi-bell bi-2x"></i> 07:00</p>
-    </div>
+        <p id="alarme"><i class="bi-bell bi-2x"></i>07:00</p>
+      </div>
 
 <!-- Modals -->
 <div id="fenetreAjuster"
   class="popup-modal shadow" 
   data-popup-modal="one">
-  <i class="bi-2x bi-x fermeFenetreAjuster"></i>
-  <h1 class="font-weight-bold">
-    Modal One Title
-  </h1>
+  <div class="boutons_du_haut">
+    <button id="active_reveil" class="bi-volume-up-fill bi-2x""></button>
+    <button class="fermeFenetreAjuster icone_haut_droit bi-x bi-2x"></button>
+  </div>
+  <p id="heure_reveil">07:00</p>
+  
 </div>
 
 

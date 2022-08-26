@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "reveil matin",
   "scripts": {
-    "start": "cd public && python -m SimpleHTTPServer 3000",
+    "oldstart": "cd public && python -m SimpleHTTPServer 3000",
     "serve": "cd public && python -m SimpleHTTPServer 80",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "pulpficti@gmail.com",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
